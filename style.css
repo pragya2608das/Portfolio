@@ -542,3 +542,142 @@ text-align:center;
 }
 
 }
+
+/* =============================== */
+/* IMPROVED MOBILE RESPONSIVENESS */
+/* =============================== */
+
+@media (max-width:900px){
+
+/* HERO */
+
+.hero{
+flex-direction:column;
+text-align:center;
+padding:60px 20px;
+}
+
+.hero-left{
+max-width:100%;
+}
+
+.hero-title{
+font-size:36px;
+}
+
+.hero-stats{
+justify-content:center;
+flex-wrap:wrap;
+}
+
+/* IMAGE */
+
+.photo-wrapper{
+width:200px;
+height:200px;
+margin-top:20px;
+}
+
+/* ABOUT GRID */
+
+#about .about-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+/* SKILLS */
+
+.skill-grid{
+grid-template-columns:1fr;
+}
+
+/* PROJECTS */
+
+.project-grid{
+grid-template-columns:1fr;
+}
+
+/* CERTIFICATIONS */
+
+.cert-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+/* CONTACT */
+
+.contact-container{
+flex-direction:column;
+align-items:center;
+}
+
+.contact-info{
+text-align:center;
+}
+
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width:500px){
+
+/* NAVBAR */
+
+.navbar{
+flex-direction:column;
+padding:15px;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:10px;
+}
+
+nav a{
+margin:6px 10px;
+font-size:14px;
+}
+
+/* HERO */
+
+.hero-title{
+font-size:28px;
+}
+
+.hero-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.hero-buttons a{
+width:200px;
+text-align:center;
+}
+
+/* ABOUT */
+
+#about .about-grid{
+grid-template-columns:1fr;
+}
+
+/* CERTIFICATIONS */
+
+.cert-grid{
+grid-template-columns:1fr;
+}
+
+/* EXPERIENCE */
+
+.experience-box{
+flex-direction:column;
+text-align:left;
+}
+
+/* TAGS AROUND PHOTO */
+
+.tag{
+display:none;
+}
+
+}
